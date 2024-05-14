@@ -118,9 +118,6 @@ nav .nav__list li img {
 }
 
 .product {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,12 +127,15 @@ nav .nav__list li img {
   max-width: 500px;
   width: 100%;
 }
+.product h1 {
+  margin: 20px 0;
+}
+.product p {
+  margin-bottom: 10px;
+}
 
 .choose-color {
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 60px;
 }
 .choose-color img {
@@ -146,9 +146,6 @@ nav .nav__list li img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 20px;
   margin-bottom: 10px;
 }
@@ -166,9 +163,6 @@ nav .nav__list li img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 20px;
 }
 .order .oreder__choose button {
