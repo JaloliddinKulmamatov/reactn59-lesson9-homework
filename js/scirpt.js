@@ -25,7 +25,7 @@ function checkToken() {
 
   // no token
   if (!token) {
-    window.location.href = "http://127.0.0.1:5500/login.html";
+    window.location.href = "/login.html";
   }
 }
 
@@ -45,8 +45,8 @@ function render(products) {
         <img src="${product.image}" alt="abc">
       </div>
       <div class="wrapper__card__button">
-        <h3>${product.title}</h3>
-        <p class="description">${product.description}% </p>
+        <h3>${product.title.slice(0,20)}</h3>
+        <p class="description">${product.description.slice(0,90)}% </p>
         <p class="rating">${product.rating.rate}</p>
         <p class="rating">[${product.rating.count}]</p>
         <span>
